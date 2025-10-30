@@ -1,17 +1,3 @@
-Isso quebra a estrutura YAML. Cada linha dentro de um bloco `|` deve estar **indentada igualmente** com 2 espaços a partir do `|`.
-
-3. **Boa prática: usar `set -e` em blocos longos de shell**  
-Isso faz o job parar se algum comando falhar (evita builds corrompidos).
-
-4. **Scripts UCI / rc.local – OK**, só precisei ajustar a indentação do bloco `EOF` (para que o YAML não quebre).
-
-5. **Faltava permissão de execução no rc.local** (adicionada: `chmod +x files/etc/rc.local`).
-
----
-
-## ✅ Workflow corrigido, formatado e validado
-
-```yaml
 name: Build OpenWrt (Ubuntu 24.04)
 
 on:
