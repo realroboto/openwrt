@@ -109,7 +109,7 @@ jobs:
         run: |
           cd openwrt
           # Altere o link abaixo para o config correto do seu target
-          wget -O .config "https://raw.githubusercontent.com/pesa1234/MT6000_cust_build/refs/heads/main/2025-10-08_r32052-11eca35c6b_next-r4.6.12.rss.mtk/targets/mediatek/filogic/config.buildinfo"
+          wget -O .config "https://raw.githubusercontent.com/realroboto/openwrt/refs/heads/main/.config"
           make defconfig
           echo "Configuração final:"
           grep CONFIG_TARGET .config | head
