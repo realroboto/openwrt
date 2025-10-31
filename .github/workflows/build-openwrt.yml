@@ -61,6 +61,8 @@ jobs:
           git clone https://github.com/pesa1234/openwrt.git
           cd openwrt
           git checkout next-r4.6.14.rss.mtk
+          rm -rf ./feeds ./package/feeds
+          ./scripts/feeds clean
           ./scripts/feeds update -a
           ./scripts/feeds install -a
 
