@@ -1,7 +1,7 @@
 #!/bin/sh
 
-ethtool -K eth1 rx-udp-gro-forwarding on rx-gro-list off
-ethtool -K pppoe-wan rx-udp-gro-forwarding on rx-gro-list off
+ethtool -K eth1 gro off
+ethtool -K pppoe-wan gro off
 
 /etc/init.d/sysntpd enable
 /etc/init.d/sysntpd restart
