@@ -7,6 +7,5 @@
 /etc/init.d/sysntpd restart
 date
 
-reboot
 
 exit 0
